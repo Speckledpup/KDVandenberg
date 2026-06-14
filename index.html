@@ -196,9 +196,7 @@
     }
 
     /* ── SECTIONS ── */
-    section {
-      padding: 5rem 2rem;
-    }
+    section { padding: 5rem 2rem; }
 
     .section-inner {
       max-width: 900px;
@@ -285,10 +283,27 @@
       margin-bottom: 0.6rem;
     }
 
-    .timeline-desc {
-      font-size: 0.9rem;
+    .timeline-bullets {
+      list-style: none;
+      padding: 0;
+    }
+
+    .timeline-bullets li {
+      font-size: 0.88rem;
       color: #444;
       line-height: 1.65;
+      padding-left: 1rem;
+      position: relative;
+      margin-bottom: 0.5rem;
+    }
+
+    .timeline-bullets li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--gold);
+      font-size: 0.75rem;
+      top: 0.05rem;
     }
 
     .timeline-tags {
@@ -327,9 +342,7 @@
       border-bottom: 1px solid var(--border);
     }
 
-    .skill-bar-wrap {
-      margin-bottom: 0.9rem;
-    }
+    .skill-bar-wrap { margin-bottom: 0.9rem; }
 
     .skill-bar-label {
       display: flex;
@@ -423,9 +436,7 @@
     .edu-info p { font-size: 0.85rem; color: var(--muted); }
 
     /* ── CONTACT ── */
-    #contact {
-      background: var(--navy);
-    }
+    #contact { background: var(--navy); }
 
     #contact h2 { color: var(--white); }
     #contact .section-label { color: var(--gold); }
@@ -544,15 +555,14 @@
       .skill-bar-fill { transition: none; }
     }
   </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z1L6Q8C99"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-0Z1L6Q8C99');
-</script>  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z1L6Q8C99"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0Z1L6Q8C99');
+  </script>
 </head>
 <body>
 
@@ -578,15 +588,15 @@
       <div class="hero-stats">
         <div class="stat">
           <span class="stat-number">8+</span>
-          <span class="stat-label">Years Municipal Finance</span>
+          <span class="stat-label">Years Public Sector</span>
         </div>
         <div class="stat">
-          <span class="stat-number">GFOA</span>
-          <span class="stat-label">Active Member</span>
+          <span class="stat-number">$350M+</span>
+          <span class="stat-label">Portfolio Managed</span>
         </div>
         <div class="stat">
-          <span class="stat-number">GASB</span>
-          <span class="stat-label">GAAP Specialist</span>
+          <span class="stat-number">97%</span>
+          <span class="stat-label">Labor Reduction via VBA</span>
         </div>
         <div class="stat">
           <span class="stat-number">MPAcc</span>
@@ -610,28 +620,76 @@
       <div class="timeline">
 
         <div class="timeline-item">
-          <p class="timeline-date">Current</p>
+          <p class="timeline-date">Apr 2025 – Present</p>
           <p class="timeline-role">Budget Analyst II</p>
           <p class="timeline-org">City of Fort Worth, Texas</p>
-          <p class="timeline-desc">Manage a large multi-fund budget portfolio across City departments, providing analysis, forecasting, and reporting in compliance with GAAP and GASB standards. Developed self-taught VBA automation that significantly reduced manual labor in budget processes. Supports annual budget preparation, mid-year amendments, and performance monitoring for one of Texas's largest cities.</p>
+          <ul class="timeline-bullets">
+            <li>Prepare monthly written variance analyses for a $350M+ portfolio spanning 7 funds — General, Special Revenue, Internal Service, and Trust — reconciling actuals from Questica and PeopleSoft against independently developed projections.</li>
+            <li>Built from scratch an Excel-based projection model with custom VBA macro to generate independent monthly forecasts, reconciled against departmental projections through direct engagement with fiscal staff and leadership.</li>
+            <li>Approve budget journals transferring appropriations between line items, verifying available budget authority and ensuring compliance with fiscal controls; support PeopleSoft budget validation for procurement and purchase order processing.</li>
+            <li>Prepare Mayor and Council communications supporting mid-year budget ordinance amendments and post-close ordinance reconciliation to actuals, translating complex multi-fund financial data for elected official review.</li>
+          </ul>
           <div class="timeline-tags">
             <span class="tag">GASB/GAAP</span>
             <span class="tag">Multi-Fund Budgeting</span>
             <span class="tag">VBA Automation</span>
-            <span class="tag">Financial Forecasting</span>
+            <span class="tag">PeopleSoft</span>
+            <span class="tag">Questica</span>
           </div>
         </div>
 
         <div class="timeline-item">
-          <p class="timeline-date">Elected · Current</p>
-          <p class="timeline-role">Council Member (Place 1) &amp; Mayor Pro Tem</p>
-          <p class="timeline-org">City of Reno, Texas</p>
-          <p class="timeline-desc">Re-elected to serve the City of Reno, a Type A General Law city. As Mayor Pro Tem, assists in presiding over council sessions, evaluating policy proposals, and overseeing city operations. Handles matters including municipal personnel, infrastructure planning, grant oversight, and intergovernmental coordination.</p>
+          <p class="timeline-date">Sep 2021 – Apr 2025</p>
+          <p class="timeline-role">Manager of Finance and Administration</p>
+          <p class="timeline-org">University of Texas at Arlington</p>
+          <ul class="timeline-bullets">
+            <li>Directed full-cycle accounting operations for a $30M self-funded enterprise division, supervising a tiered team of five performing AP, AR, cash receipts, and payroll functions using PeopleSoft.</li>
+            <li>Oversaw invoicing and collections for one of the nation's top OSHA education centers, billing corporations, state agencies, and federal agencies under varied structures including contract, post-service, and prepaid arrangements.</li>
+            <li>Prepared and presented monthly accrual-based financial reports to VP and senior leadership, converting cash basis university data to accrual accounting and recognizing unearned revenue for GAAP-compliant visibility.</li>
+            <li>Established and maintained internal controls across AP, AR, payroll, and cash handling; coordinated internal audit engagements including preparation of all working papers and supporting documentation.</li>
+            <li>Built Excel-based reporting templates and custom VBA macros from scratch, improving forecast accuracy by 25% and streamlining cost allocations across multiple operating units.</li>
+          </ul>
           <div class="timeline-tags">
-            <span class="tag">Municipal Governance</span>
-            <span class="tag">Policy Evaluation</span>
-            <span class="tag">Texas Local Gov</span>
-            <span class="tag">Public Finance</span>
+            <span class="tag">Team Leadership</span>
+            <span class="tag">GAAP Reporting</span>
+            <span class="tag">Audit Coordination</span>
+            <span class="tag">VBA</span>
+            <span class="tag">PeopleSoft</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">Apr 2019 – Aug 2021</p>
+          <p class="timeline-role">Accountant II</p>
+          <p class="timeline-org">University of Texas at Arlington</p>
+          <ul class="timeline-bullets">
+            <li>Prepared and presented monthly accrual-based financial reports to directors across 8 business units, converting cash basis data and reconciling fund activity across federal grants, state grants, state appropriations, and enterprise funds.</li>
+            <li>Rebuilt the monthly financial report macro from scratch following a major system reporting change, reducing preparation time from 10 hours to 2 hours.</li>
+            <li>Leveraged SQL read access to Student Manager database to build enhanced operational and financial reports, improving data accuracy and reporting depth across business units.</li>
+            <li>Monitored and reconciled monthly payroll actuals to expected figures across accounts, identifying and requesting corrections to ensure accurate fund reporting.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="tag">Fund Accounting</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Process Re-Engineering</span>
+            <span class="tag">Grant Reporting</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <p class="timeline-date">Jan 2018 – Apr 2019</p>
+          <p class="timeline-role">Accountant I</p>
+          <p class="timeline-org">University of Texas at Arlington</p>
+          <ul class="timeline-bullets">
+            <li>Identified a broken monthly reporting process requiring 4 staff members 15 hours each to complete. Independently built a VBA macro from first principles — 40 hours of self-taught coding with no prior VBA experience — reducing combined labor from 60 hours to 2 hours, a 97% reduction.</li>
+            <li>Performed full-cycle AP invoice entry in PeopleSoft, created client invoices in Student Manager for vendor billing, and reconciled monthly payroll actuals, requesting corrections as needed.</li>
+            <li>Supported GAAP-compliant financial reporting across federal grants, state grants, state appropriations, and enterprise funds for a nationally recognized OSHA training enterprise division.</li>
+          </ul>
+          <div class="timeline-tags">
+            <span class="tag">VBA Automation</span>
+            <span class="tag">Full-Cycle AP</span>
+            <span class="tag">Fund Accounting</span>
+            <span class="tag">PeopleSoft</span>
           </div>
         </div>
 
@@ -649,7 +707,7 @@
         <div class="skill-group">
           <h3>Governmental Accounting</h3>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>GASB Standards</span><span>Expert</span></div>
+            <div class="skill-bar-label"><span>GASB/GAAP Reporting</span><span>Expert</span></div>
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
           </div>
           <div class="skill-bar-wrap">
@@ -657,8 +715,8 @@
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>GAAP Compliance</span><span>Expert</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            <div class="skill-bar-label"><span>Audit Coordination</span><span>Advanced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
           </div>
           <div class="skill-bar-wrap">
             <div class="skill-bar-label"><span>Debt Financing (TANs/Bonds)</span><span>Advanced</span></div>
@@ -673,6 +731,10 @@
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
           </div>
           <div class="skill-bar-wrap">
+            <div class="skill-bar-label"><span>Variance Analysis</span><span>Expert</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-bar-wrap">
             <div class="skill-bar-label"><span>Financial Forecasting</span><span>Advanced</span></div>
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
           </div>
@@ -680,49 +742,45 @@
             <div class="skill-bar-label"><span>Capital Planning</span><span>Advanced</span></div>
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="84"></div></div>
           </div>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Cost-Benefit Analysis</span><span>Advanced</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
-          </div>
         </div>
 
         <div class="skill-group">
           <h3>Technology</h3>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>VBA / Excel Automation</span><span>Advanced</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+            <div class="skill-bar-label"><span>VBA / Excel Automation</span><span>Expert</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Microsoft Excel</span><span>Expert</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            <div class="skill-bar-label"><span>PeopleSoft / Questica</span><span>Advanced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Financial ERP Systems</span><span>Proficient</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+            <div class="skill-bar-label"><span>SQL / Power Query</span><span>Advanced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
           </div>
           <div class="skill-bar-wrap">
             <div class="skill-bar-label"><span>JavaScript / Web Dev</span><span>Learning</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="30"></div></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="25"></div></div>
           </div>
         </div>
 
         <div class="skill-group">
           <h3>Leadership &amp; Governance</h3>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Municipal Policy</span><span>Expert</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            <div class="skill-bar-label"><span>Texas Municipal Finance</span><span>Expert</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Intergovernmental Relations</span><span>Advanced</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            <div class="skill-bar-label"><span>Team Supervision</span><span>Advanced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
           </div>
           <div class="skill-bar-wrap">
             <div class="skill-bar-label"><span>Stakeholder Communication</span><span>Advanced</span></div>
             <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
           </div>
           <div class="skill-bar-wrap">
-            <div class="skill-bar-label"><span>Grant Oversight</span><span>Proficient</span></div>
-            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+            <div class="skill-bar-label"><span>Policy Evaluation</span><span>Advanced</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
           </div>
         </div>
       </div>
@@ -737,20 +795,20 @@
 
       <div class="civic-card">
         <h3>Mayor Pro Tem &amp; Council Member, Place 1</h3>
-        <p class="org">City of Reno, Texas · Elected</p>
-        <p>Re-elected to the Reno City Council and appointed Mayor Pro Tem. Leads agenda review, policy deliberation, and municipal oversight for a Type A General Law city. Handles infrastructure planning evaluation, personnel matters, commission governance, and fiscal policy — bringing professional finance expertise directly into the civic arena.</p>
+        <p class="org">City of Reno, Texas · May 2024 – Present</p>
+        <p>Authorize annual tax rates and budgets for a Type A General Law city under LGC Chapter 22, ensuring Truth-in-Taxation compliance and state transparency mandates. Review and approve annual audit findings as a voting governing body member. Oversee City Administrator operations and ensure procedural integrity and TOMA compliance under LGC Chapter 551.</p>
+      </div>
+
+      <div class="civic-card">
+        <h3>Chairman, Planning &amp; Zoning Commission</h3>
+        <p class="org">City of Reno, Texas · May 2023 – May 2024</p>
+        <p>Presided over public hearings and commission proceedings, managing parliamentary procedure and evaluating development plats and zoning variances under LGC Chapter 211.</p>
       </div>
 
       <div class="civic-card">
         <h3>Government Finance Officers Association (GFOA)</h3>
         <p class="org">Active Member</p>
-        <p>Engaged member of GFOA, staying current on best practices in governmental accounting, budgeting, and financial reporting standards. Leverages GFOA resources to strengthen municipal finance operations in both professional and elected roles.</p>
-      </div>
-
-      <div class="civic-card">
-        <h3>North Texas Community Roots</h3>
-        <p class="org">Parker County · Wise County · Tarrant County</p>
-        <p>Deep personal and professional ties to North Texas. Active interest in the development, governance, and community wellbeing of smaller municipalities and rural areas across the region — reflecting a commitment to public service that extends beyond the office.</p>
+        <p>Engaged member staying current on best practices in governmental accounting, budgeting, and financial reporting standards — leveraged directly in both professional and elected roles.</p>
       </div>
     </div>
   </section>
@@ -765,17 +823,26 @@
         <div class="edu-icon">🎓</div>
         <div class="edu-info">
           <h3>Master of Professional Accounting (MPAcc)</h3>
-          <p class="school">University of Texas at Arlington</p>
-          <p>Graduate program with focus on accounting theory, governmental accounting, auditing, and financial reporting. Provides the academic foundation underlying day-to-day GAAP/GASB application in municipal finance.</p>
+          <p class="school">University of Texas at Arlington · May 2018</p>
+          <p>Focused on Financial Statement Analysis, Audit, and Accounting Systems. Provides the academic foundation underlying day-to-day GAAP/GASB application in municipal finance.</p>
+        </div>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-icon">🏛️</div>
+        <div class="edu-info">
+          <h3>Bachelor of Arts in Criminology and Criminal Justice</h3>
+          <p class="school">University of Texas at Arlington · May 2013</p>
+          <p>Graduated Cum Laude with Honors. Focus on Police Management &amp; Administration — informing a career-long orientation toward public accountability and institutional governance.</p>
         </div>
       </div>
 
       <div class="edu-item">
         <div class="edu-icon">📋</div>
         <div class="edu-info">
-          <h3>Continuing Professional Education</h3>
-          <p class="school">GFOA · Texas Municipal League · Ongoing</p>
-          <p>Regular participation in governmental finance training, Texas local government law updates, and public administration development programs.</p>
+          <h3>Continuing Professional Development</h3>
+          <p class="school">The Center for Leadership Studies · 2025</p>
+          <p>Situational Leadership® Essentials and Situational Performance Ownership™ certifications. Ongoing GFOA and Texas Municipal League training in governmental finance and local government law.</p>
         </div>
       </div>
     </div>
@@ -791,7 +858,7 @@
         <div>
           <p class="contact-text">Whether you're exploring a professional opportunity, looking to connect on municipal finance topics, or interested in North Texas civic matters — I'd be glad to hear from you.</p>
           <div class="contact-links">
-            <a href="https://linkedin.com/in/kevin-vandenberg-mpacc-bs-b8174b37" class="contact-link" target="_blank">
+            <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
               <span class="contact-link-icon">in</span>
               LinkedIn Profile
             </a>
@@ -799,9 +866,13 @@
               <span class="contact-link-icon">✉</span>
               kdvandenberg@yahoo.com
             </a>
+            <a href="tel:8175976071" class="contact-link">
+              <span class="contact-link-icon">📞</span>
+              817.597.6071
+            </a>
             <a href="#" class="contact-link">
               <span class="contact-link-icon">📍</span>
-              North Texas Area
+              Springtown, TX
             </a>
           </div>
         </div>
@@ -855,7 +926,7 @@
           setTimeout(() => entry.target.classList.add('visible'), i * 120);
         }
       });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.1 });
 
     timelineItems.forEach(item => timelineObserver.observe(item));
 
@@ -873,29 +944,36 @@
 
     bars.forEach(bar => barObserver.observe(bar));
 
-    // ── Contact form (demo) ──
+    // ── Contact form — Formspree ──
     function handleSubmit() {
-  const name = document.getElementById('f-name').value.trim();
-  const email = document.getElementById('f-email').value.trim();
-  const message = document.getElementById('f-message').value.trim();
+      const name = document.getElementById('f-name').value.trim();
+      const email = document.getElementById('f-email').value.trim();
+      const message = document.getElementById('f-message').value.trim();
 
-  if (!name || !email || !message) {
-    alert('Please fill in all fields.');
-    return;
-  }
+      if (!name || !email || !message) {
+        alert('Please fill in all fields.');
+        return;
+      }
 
-  fetch('https://formspree.io/f/xykallqz', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ name, email, message })
-  })
-  .then(() => {
-    document.getElementById('form-success').style.display = 'block';
-    document.getElementById('f-name').value = '';
-    document.getElementById('f-email').value = '';
-    document.getElementById('f-message').value = '';
-  });
-}
+      fetch('https://formspree.io/f/xykallqz', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+      })
+      .then(res => {
+        if (res.ok) {
+          document.getElementById('form-success').style.display = 'block';
+          document.getElementById('f-name').value = '';
+          document.getElementById('f-email').value = '';
+          document.getElementById('f-message').value = '';
+        } else {
+          alert('Something went wrong. Please try again or email me directly.');
+        }
+      })
+      .catch(() => {
+        alert('Something went wrong. Please try again or email me directly.');
+      });
+    }
   </script>
 
 </body>
